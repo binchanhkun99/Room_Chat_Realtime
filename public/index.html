@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Chat RealTime</title>
+	</head>
+	<body>
+		<div class="img2">
+			<img src="./img/img2.svg" alt="">
+		</div>
+		<div class="join-container">
+
+			<header class="join-header">
+				<h1><i class="far fa-comment"></i> Phòng chat GR2</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Biệt danh</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Nhập tên hoặc biệt danh của bạn..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Phòng</label>
+						<select name="room" id="room">
+							<option value="RealLove">Real Love</option>
+							<option value="BestFriend">Best Friend</option>
+							<option value="Randoom">Ngẫu nhiên</option>
+							<option value="double">Cặp đôi</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Tham gia chat</button>
+				</form>
+			</main>
+		<div class="img img1">
+			<img src="./img/undraw_chatting_re_j55r (1).svg" alt="">
+		</div>
+	</body>
+</html>

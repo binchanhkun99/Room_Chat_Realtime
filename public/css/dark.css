@@ -1,0 +1,80 @@
+
+:root {
+	--green-color-a: #00BFA6;
+	--green-color-b: #31E4CF;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+	--dennhat-color: #3e4042;
+	--dendam-color: #1c1e21;
+
+}
+[data-theme="dark"] {
+	--dennhat-color: #3e4042;
+	--dendam-color: #1c1e21;
+  }
+
+* {
+	box-sizing: border-box;
+}
+
+
+body.dark {
+	background: var(--dendam-color);
+}
+body.dark .chat-messages{
+	background-color: var(--dendam-color);
+}
+body.dark .chat-messages .message{
+	background-color: var(--dennhat-color);
+}
+body.dark .chat-messages .message .text{
+color: var(--light-color);
+}
+body.dark .chat-messages .message .meta .text1{
+	color: var(--light-color);
+	}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: var(--green-color-b);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+	top: 140px;
+	right: 360px;
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
